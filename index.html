@@ -6,21 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    <header><h1>Home Page</h1>
-        <div>
-            <a href = "#">Home</a>
-            <a href="about.html">About</a>
-             <a href="contact.html">Contact</a>
-             <a href="signin.html">SignIn</a>
-        </div>
-        </header>
-        <main>
-            
-            
-            <p>Codegnan offers finishing schools for students who wants to start and grow their tech career. 
-            Become job-ready with our expert trainer led online and classroom IT certification courses.</p>
-    
-        </main>
+    <h1>Job Application Form</h1>
+    <form action="/submit-job-form" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br><br>
 
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="Gender">gender:</label><br>
+        <select id ="gender" name="gender" required>
+        <option value="">select</option>
+        <option value="">male</option>
+        <option value="">female</option>
+        <option value="">others</option>
+        
+        </select><br><br>
+
+        <label for="position">Position Applying For:</label>
+        <select id="position" name="position" required>
+            <option value="">Select Position</option>
+            <option value="software-engineer">Software Engineer</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="ui-designer">UI Designer</option>
+        </select>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+
+        <input type="checkbox" id ="agreement" name="agreement"required>
+        <label for="agreement">I agree to the terms and conditions</label>
+
+
+        <button type="submit">Submit Application</button>
+    </form>
 </body>
 </html>
