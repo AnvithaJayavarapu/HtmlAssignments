@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,47 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Job Application Form</h1>
-    <form action="/submit-job-form" method="post">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-        <br><br>
+    <img src="https://images.unsplash.com/photo-1731927321985-3bf41a2f8fe2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D"width="300" height="300"alt="">
+    
+    <video src="vid.mp4" width="300" height="300" controls></video>
+    <br><br>
+    <audio src="aud.mp3"controls></audio>
+    
+    <svg width="300" height="200">
+        <circle cx = "150" cy="100" r="80" fill="pink"/>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+    </svg>
+    <svg width="400" height="300">
+        <polygon points="200,50 150,250 250,250" fill="purple" />
+      </svg>
+      
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+    <br><br>
+    <embed src="1 resume.pdf" type="application/pdf">
+        <object data="Resume.pdf" type="application/pdf">This pdf didnt support your web browser</object>
         <br><br>
-
-        <label for="Gender">gender:</label><br>
-        <select id ="gender" name="gender" required>
-        <option value="">select</option>
-        <option value="">male</option>
-        <option value="">female</option>
-        <option value="">others</option>
         
-        </select><br><br>
+      
+        
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sc-9bySroEQ?si=gJSQvtPraz1FJMF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LYUz_jZ077E?si=gpDpE1hl5qYvfj0B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;        
+        
 
-        <label for="position">Position Applying For:</label>
-        <select id="position" name="position" required>
-            <option value="">Select Position</option>
-            <option value="software-engineer">Software Engineer</option>
-            <option value="data-analyst">Data Analyst</option>
-            <option value="ui-designer">UI Designer</option>
-        </select>
-        <br><br>
-
-        <label for="resume">Upload Resume:</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-        <br><br>
-
-        <input type="checkbox" id ="agreement" name="agreement"required>
-        <label for="agreement">I agree to the terms and conditions</label>
-
-
-        <button type="submit">Submit Application</button>
-    </form>
+      
 </body>
 </html>
+
